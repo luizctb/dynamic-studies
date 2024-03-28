@@ -1,3 +1,10 @@
+// Esse arquivo é obrigatório ter 
+// Pode ter outros layouts mais esse é fundamental
+// O children é filho e pode ser passado qualquer outro para ele.
+// Fica em volta da apliçao, qualquer mudança nele altera o que é exibido no navegador.
+// no retur posso modificado e colocado esse que está comentado para persoinalização básica
+
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,8 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">      
+      <body className={inter.className}>{children}</body>        
     </html>
   );
 }
+//   return (
+//     <html lang="en">      
+//       <body className="bg-primary text-gray-100">
+//         <div className="bg-slate-300 py-20">{children}</div>
+//       </body>                
+//     </html>
+//   );
+// }
