@@ -136,3 +136,43 @@ function MeuComponente({ nome, paragrafo, cor }) {
 }
 
 export default MeuComponente;
+
+
+//############################################################################################
+// Outro exemplo de props
+// // criar um componente chamado Greeting que receberá uma propriedade name e exibirá uma mensagem de boas-vindas personalizada.
+// Quando o componente App é renderizado, ele inclui duas instâncias do componente Greeting com diferentes valores para a propriedade name.
+// Quando o componente Greeting é renderizado, ele recebe a propriedade name específica para aquela instância.
+// O componente Greeting usa essa propriedade para exibir uma mensagem de boas-vindas personalizada para cada instância.
+
+// import React from 'react'; é usado para importar o React.
+// const Greeting = (props) => { ... }; define o componente Greeting que recebe props como parâmetro. props é um objeto que contém todas as propriedades passadas para o componente.
+// return <h1>Hello, {props.name}!</h1>; renderiza uma mensagem de boas-vindas personalizada com base na propriedade name.
+
+import React from 'react';
+
+const Greeting = (props) => {
+  return <h1>Hello, {props.name}!</h1>;
+};
+
+export default Greeting;
+
+//----------------------------------------------------------------------------------
+
+// // Agora vamos usar o componente Greeting em outro componente chamado App.
+// import Greeting from './Greeting'; importa o componente Greeting que criamos anteriormente.
+// <Greeting name="Alice" /> e <Greeting name="Bob" /> são instâncias do componente Greeting com diferentes valores para a propriedade name.
+
+import React from 'react';
+import Greeting from './Greeting';
+
+const App = () => {
+  return (
+    <div>
+      <Greeting name="Alice" />
+      <Greeting name="Bob" />
+    </div>
+  );
+};
+
+export default App;

@@ -92,3 +92,45 @@ function App() {
 }
 
 
+//########################################################################
+// // Outro exemplo completo de estado
+// Importação de React e useState: No início do código, importamos o React e a função useState do pacote React. useState é um hook do React que nos permite adicionar estado a componentes de função.
+
+// Definição do componente Counter: Criamos um componente de função chamado Counter. Esse componente renderiza um contador e dois botões para incrementar e decrementar o contador.
+
+// Definição do estado com useState: Dentro do componente Counter, usamos o hook useState para definir o estado inicial do contador como 0. O useState retorna um par de valores: o estado atual (count) e uma função para atualizar esse estado (setCount).
+
+// Funções increment e decrement: Criamos duas funções increment e decrement que atualizam o estado do contador. A função increment aumenta o contador em 1, enquanto a função decrement diminui o contador em 1.
+
+// Renderização do componente: No retorno do componente, renderizamos o valor do contador (count) e dois botões que chamam as funções increment e decrement quando clicados.
+
+// Exportação do componente: Por fim, exportamos o componente Counter para que ele possa ser usado em outros lugares da aplicação.
+
+// Quando o componente Counter é renderizado, ele exibirá o valor do contador e permitirá que o usuário o incremente ou decremente clicando nos botões correspondentes. O estado do contador é mantido internamente pelo React e é atualizado automaticamente quando chamamos a função setCount.
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  // Definindo o estado inicial do contador como 0
+  const [count, setCount] = useState(0);
+
+  // Função para aumentar o contador em 1
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  // Função para diminuir o contador em 1
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div>
+      <h1>Contador: {count}</h1>
+      <button onClick={increment}>Incrementar</button>
+      <button onClick={decrement}>Decrementar</button>
+    </div>
+  );
+};
+
+export default Counter;
