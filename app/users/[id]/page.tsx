@@ -4,6 +4,7 @@
 // nome id da pasta pode ser modificado, se mudar na pasta muda aqui no código.
 // parms (por que é parâmetros)
 // Rota dinâmica
+// Nome da pasta pode ser iulId, slogan
 
 import Link from "next/link";
 
