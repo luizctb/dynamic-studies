@@ -18,7 +18,7 @@ export default MeuComponente;
 // Foi passado o atributo 
 
 
-import MeuComponente from "../props/Props";
+import MeuComponente from "./Props";
 
 function App() {
     return (
@@ -50,7 +50,7 @@ export default MeuComponente;
 //-------------------------------------------------------------------
 // No componente 2 e 3 vai aparecer na tela fulano
 
-import MeuComponente from "../props/Props";
+import MeuComponente from "./Props";
 
 function App() {
     return (
@@ -66,7 +66,7 @@ function App() {
 
 // Passando outro atributo. Como se paragrafo fosse falso
 
-import MeuComponente from "../props/Props";
+import MeuComponente from "./Props";
 
 function App() {
     return (
@@ -105,7 +105,7 @@ export default MeuComponente;
 // Incluindo Mudança de cor 
 // Posso colocar cor somente no primeiro parágrafo como também colocar nos demais conforme abaixo
 
-import MeuComponente from "../props/Props";
+import MeuComponente from "./Props";
 
 function App() {
     return (
